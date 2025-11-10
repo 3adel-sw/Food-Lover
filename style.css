@@ -337,18 +337,29 @@ nav ul li a:hover {
 }
 
 /* Menu Section End */
-/* Start section Daytime */
+/* Daytime section Start */
+#daytime {
+  background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
 #daytime .daytime-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 40vh;
 }
-#daytime img {
-  z-index: -1;
-}
+
 #daytime .daytime-items h3 {
   font-size: 32px;
   margin: 20px 0 10px;
 }
-/* End section Daytime */
+
+#daytime .daytime-items p {
+  font-weight: 500;
+}
+/* Daytime section End */
 /* Start section Gallery */
 /* Gallery styles - match attached design */
 #gallery {
