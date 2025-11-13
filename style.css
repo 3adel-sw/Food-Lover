@@ -85,10 +85,16 @@ html {
 body {
   overflow-x: hidden;
 }
-header {
-  height: 100vh;
+/* Header Section Start */
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
 header::before {
   content: "";
   position: absolute;
@@ -605,6 +611,21 @@ form button {
 
   /* Mobile Devices */
   @media (max-width: 600px) {
+    header .content {
+      top: 65%;
+    }
+    header .content p {
+      font-size: 14px;
+    }
+    header .content h1 {
+      font-size: 24px;
+    }
+    header .content h1 {
+      font-size: 22px;
+    }
+    header img {
+      width: 150px;
+    }
     #navbar {
       flex-direction: column;
       align-items: center;
